@@ -32,7 +32,19 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-
+		<distributionManagement>
+	         <repository>
+			 <id>nexus</id>
+			 <name>Flipkart Releases Repository</name>
+			 <url>http://13.232.134.147:8081/repository/Flipkart-releases/</url>
+			</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			 <name>Flipkart Snapshot Repository</name>
+			 <url>http://13.232.134.147:8081/repository/Flipkart-snapshot/</url>
+		</snapshotRepository>
+		</distributionManagement>
+						
 	</dependencies>
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
@@ -64,7 +76,7 @@
 	          <manifest>
 	            <addClasspath>true</addClasspath>
 	            <classpathPrefix>lib/</classpathPrefix>
-	            <mainClass>com.mt.sample.HelloWorld</mainClass>
+	            <mainClass>com.mt.sample.HelloWorld</maidinClass>
 	          </manifest>
 	        </archive>
 	      </configuration>
